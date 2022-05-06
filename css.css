@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background: rgb(224, 57, 57);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset rgb(170, 57, 57) 0 0 100px 50px;
+}
+
+.superContent {
+    position: relative;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 60vw;
+    z-index: -10;
+}
+
+.image1 {
+    height : 100%;
+    width: 100%;
+    background-image: url(src/moto1.jpg);
+    background-position: 10%;
+    max-width: 100%;
+    background-size:cover;
+    cursor: pointer;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;
+    margin-left: 13.5px;
+    margin-right:5px
+}
+.image2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(src/moto2.jpg);
+    background-position: 10%;
+    max-width: 100%;
+    background-size:cover;
+    cursor: pointer;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    margin-right: 13.5px;
+    margin-left:5px
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.opacity{
+    transition: width 1.5s;
+    width: 48%;
+
+}
+.width {
+    transition: width 1.5s;
+    width: 60vw;
+
+}
+
+
+h1 {
+    text-transform: uppercase;
+    position: absolute;
+    left: -118px;
+    top: 20%;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    font-size: 5em;
+    letter-spacing: 0.1em;
+    font-family: 'Bitter', serif;
+    pointer-events: none;
+}
+.h2-1 {
+    position: absolute;
+    right: 15px;
+    top: -60px;
+}
+.h2-2 {
+    position: absolute;
+    right: 0px;
+    bottom: -60px;
+}
+
+h2 {
+    color:  white; 
+    font-size: 2em;
+}
+
+@media only screen and (max-device-width : 300px) {
+    h1 {
+        position:absolute;
+        font-size: 1.6em;
+        left: -20px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-device-width : 480px) {
+    h1 {
+        position:absolute;
+        font-size: 2em;
+        left: -20px;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 1060px) {
+    h1 {
+        position:absolute;
+        font-size: 3.5em;
+        top:35px;
+        left: -55px;
+    }
+}
