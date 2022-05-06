@@ -30,7 +30,7 @@ body {
 .image1 {
     height : 100%;
     width: 100%;
-    background-image: url(src/moto1.jpg);
+    background-image: url(src/moto1res.jpg);
     background-position: 10%;
     max-width: 100%;
     background-size:cover;
